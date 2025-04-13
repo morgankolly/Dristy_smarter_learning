@@ -11,6 +11,22 @@
     <header>
         <div class="container">
             <h1>Dristy</h1>
+            <title>CSS Media queries</title>
+
+            <!-- Served to all screens -->
+            <link rel="stylesheet" href="styles.css" media="all" />
+            <!-- Served to screens that are at least 20em wide -->
+            <link rel="stylesheet" href="small.css" media="(min-width: 320px) and (max-width: 668px )" />
+            <!-- Served to screens that are at least 64em wide -->
+            <link rel="stylesheet" href="medium.css" media="(min-width: 668px)" />
+            <!-- Served to screens that are at least 90em wide -->
+            <link rel="stylesheet" href="large.css" media="(min-width: 968px)" />
+            <!-- Served to screens that are at least 120em wide -->
+            <link rel="stylesheet" href="extra-large.css" media="(min-width: 1400px)" />
+            <!-- Served to print media, like printers -->
+            <link rel="stylesheet" href="print.css" media="print" />
+          </head>
+          
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
